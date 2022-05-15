@@ -38,7 +38,6 @@ RSS_FEEDS = {'toi': 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms'
 @app.route("/")
 def get_news():
   #feed = feedparser.parse(RSS_FEEDS[publication])
-  #first_article = feed['entries'][0]
   query = request.args.get("publication") # its a key to fetch value from GET request
   if not query or query.lower() not in RSS_FEEDS:
       publication = "toi"

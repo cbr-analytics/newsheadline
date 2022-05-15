@@ -5,6 +5,7 @@
     </head>
     <body>
     <i><h1>Headlines</h1></i>
+
         {% for article in articles %}
             <b><a href="{{article.link}}">{{article.title}}</a></b><br />
             <i>{{article.published}}</i><br />
