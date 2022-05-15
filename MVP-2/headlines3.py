@@ -1,6 +1,7 @@
 import feedparser
 from flask import Flask
 
+
 app = Flask(__name__)
 
 RSS_FEEDS = {'toi': 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
